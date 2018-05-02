@@ -3,7 +3,7 @@
 set -e
 set -x
 
-java -cp ${H2_HOME}/h2/bin/h2*.jar org h2.tools.Server \
+java -cp ${H2_HOME}/h2/bin/h2*.jar org.h2.tools.Server \
     -web -webAllowOthers -webPort 8080 \
     -tcp -tcpAllowOthers -tcpPort 1521 \
     -baseDir ${H2_HOME}/h2-data | \
